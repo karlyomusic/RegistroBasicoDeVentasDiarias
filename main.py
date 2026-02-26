@@ -13,5 +13,6 @@ subtotal = precio * productos
 es_vip = True
 
 if(es_vip):
-    descuento =
+    descuento = subtotal*0.10
+    print("Tiene acceso a descuento")
 
