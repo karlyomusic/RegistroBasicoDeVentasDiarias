@@ -14,5 +14,18 @@ es_vip = True
 
 if(es_vip):
     descuento = subtotal*0.10
-    print("Tiene acceso a descuento")
+    print("Tiene acceso a descuento") 
+else:
+    print("No tiene acceso a descuento")
 
+total = subtotal - descuento
+
+print("-"*36)
+print("    Resumen de la compra   ")
+print("-"*36)
+
+print(nombre, apellido)
+print(subtotal)
+if(cliente == "si"):
+    print(descuento)
+print(total)
