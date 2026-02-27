@@ -2,23 +2,22 @@ print("-"*36)
 print ("    Registro de compra    ")
 print("-"*36)
 
-try:
 
-    nombre = input("Ingrese su nombre: ")
-    apellido = input("Ingrese su apellido: ")
-except:
-    print("Error: Ingrese su nombre y apellido")
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+
 try:
     precio = float(input("Ingrese el precio: "))
     productos = float(input("Ingrese la cantidad de productos: "))
 except:
     print("Ingrese un número")
+    exit()
 
 try:
     cliente = input("Ingrese si tiene membresia si/no: ").lower() == "no"
 except:
     print("Error: Ingrese un si o un no")
-
+    exit()
 
 
 es_vip = bool()
