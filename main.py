@@ -9,13 +9,13 @@ apellido = input("Ingrese su apellido: ")
 try:
     precio = float(input("Ingrese el precio: "))
     productos = float(input("Ingrese la cantidad de productos: "))
-except:
+except ValueError:
     print("Ingrese un número")
     exit()
 
 try:
     cliente = input("Ingrese si tiene membresia si/no: ").lower() == "no"
-except:
+except ValueError:
     print("Error: Ingrese un si o un no")
     exit()
 
